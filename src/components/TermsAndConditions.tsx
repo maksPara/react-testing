@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const TermsAndConditions = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -10,19 +10,19 @@ const TermsAndConditions = () => {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
         delectus.
       </p>
-      <div className="pb-3">
-        <label htmlFor="agree">
+      <div className='pb-3'>
+        <label htmlFor='agree'>
           <input
-            type="checkbox"
-            id="agree"
+            type='checkbox'
+            id='agree'
             checked={isChecked}
             onChange={() => setIsChecked(!isChecked)}
-            className="mr-1"
+            className='mr-1'
           />
           I accept the terms and conditions.
         </label>
       </div>
-      <button disabled={!isChecked} className="btn">
+      <button disabled={!isChecked} className='btn'>
         Submit
       </button>
     </div>

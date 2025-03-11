@@ -1,13 +1,13 @@
-import { Button } from "@radix-ui/themes";
-import { useState } from "react";
+import { Button } from '@radix-ui/themes';
+import { useState } from 'react';
 
 function Onboarding() {
   const [isTutorialCompleted, setTutorialCompleted] = useState(
-    localStorage.getItem("tutorialCompleted") === "true"
+    localStorage.getItem('tutorialCompleted') === 'true'
   );
 
   const markTutorialCompleted = () => {
-    localStorage.setItem("tutorialCompleted", "true");
+    localStorage.setItem('tutorialCompleted', 'true');
     setTutorialCompleted(true);
   };
 
